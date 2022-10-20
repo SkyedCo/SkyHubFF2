@@ -1,0 +1,286 @@
+
+
+
+
+
+
+
+
+
+local ScreenGui = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local PlayerName = Instance.new("TextLabel")
+local Speed = Instance.new("TextButton")
+local Text = Instance.new("TextLabel")
+local Text_2 = Instance.new("TextLabel")
+local Button = Instance.new("TextButton")
+local Button_2 = Instance.new("TextButton")
+local Button_3 = Instance.new("TextButton")
+local Button_4 = Instance.new("TextButton")
+local Text_3 = Instance.new("TextLabel")
+local Text_4 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = ScreenGui
+Main.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Main.BorderColor3 = Color3.fromRGB(15, 199, 255)
+Main.Position = UDim2.new(0.398291916, 0, 0.166666672, 0)
+Main.Size = UDim2.new(0, 291, 0, 409)
+Main.Active = true
+Main.Draggable = true
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+Title.BorderColor3 = Color3.fromRGB(15, 199, 255)
+Title.Size = UDim2.new(0, 291, 0, 44)
+Title.Font = Enum.Font.Cartoon
+Title.Text = "Sky Hub"
+Title.TextColor3 = Color3.fromRGB(15, 199, 255)
+Title.TextSize = 25.000
+
+PlayerName.Name = "Player  Name"
+PlayerName.Parent = Main
+PlayerName.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+PlayerName.BorderColor3 = Color3.fromRGB(15, 199, 255)
+PlayerName.Position = UDim2.new(0, 0, 0.85330075, 0)
+PlayerName.Size = UDim2.new(0, 291, 0, 60)
+PlayerName.Font = Enum.Font.SourceSans
+PlayerName.Text = ""
+PlayerName.TextColor3 = Color3.fromRGB(15, 199, 255)
+PlayerName.TextSize = 20.000
+
+Speed.Name = "Speed"
+Speed.Parent = Main
+Speed.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Speed.BorderColor3 = Color3.fromRGB(15, 199, 255)
+Speed.Position = UDim2.new(0.158075616, 0, 0.251833767, 0)
+Speed.Size = UDim2.new(0, 25, 0, 25)
+Speed.Font = Enum.Font.SourceSans
+Speed.Text = ""
+Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed.TextSize = 14.000
+
+Text.Name = "Text"
+Text.Parent = Main
+Text.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Text.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Text.Position = UDim2.new(0.312714756, 0, 0.222493887, 0)
+Text.Size = UDim2.new(0, 146, 0, 50)
+Text.Font = Enum.Font.Cartoon
+Text.Text = "Speed [Q]"
+Text.TextColor3 = Color3.fromRGB(15, 199, 255)
+Text.TextSize = 20.000
+Text.TextXAlignment = Enum.TextXAlignment.Left
+
+Text_2.Name = "Text"
+Text_2.Parent = Main
+Text_2.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Text_2.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Text_2.Position = UDim2.new(0.312714785, 0, 0.356968224, 0)
+Text_2.Size = UDim2.new(0, 146, 0, 50)
+Text_2.Font = Enum.Font.Cartoon
+Text_2.Text = "Inf Jump"
+Text_2.TextColor3 = Color3.fromRGB(15, 199, 255)
+Text_2.TextSize = 20.000
+Text_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Button.Name = "Button"
+Button.Parent = Main
+Button.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Button.BorderColor3 = Color3.fromRGB(15, 199, 255)
+Button.Position = UDim2.new(0.158075616, 0, 0.386308074, 0)
+Button.Size = UDim2.new(0, 25, 0, 25)
+Button.Font = Enum.Font.SourceSans
+Button.Text = ""
+Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button.TextSize = 14.000
+
+Button_2.Name = "Button"
+Button_2.Parent = Main
+Button_2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Button_2.BorderColor3 = Color3.fromRGB(15, 199, 255)
+Button_2.Position = UDim2.new(0.158075616, 0, 0.628361881, 0)
+Button_2.Size = UDim2.new(0, 25, 0, 25)
+Button_2.Font = Enum.Font.SourceSans
+Button_2.Text = ""
+Button_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_2.TextSize = 14.000
+
+Button_3.Name = "Button"
+Button_3.Parent = Main
+Button_3.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Button_3.BorderColor3 = Color3.fromRGB(15, 199, 255)
+Button_3.Position = UDim2.new(0.158075616, 0, 0.508557439, 0)
+Button_3.Size = UDim2.new(0, 25, 0, 25)
+Button_3.Font = Enum.Font.SourceSans
+Button_3.Text = ""
+Button_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Button_3.TextSize = 14.000
+
+Button_4.Name = "Button"
+Button_4.Parent = Main
+Button_4.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Button_4.BorderColor3 = Color3.fromRGB(15, 199, 255)
+Button_4.Position = UDim2.new(0.876288712, 0, 0.0220048726, 0)
+Button_4.Size = UDim2.new(0, 25, 0, 25)
+Button_4.Font = Enum.Font.SourceSans
+Button_4.Text = "X"
+Button_4.TextColor3 = Color3.fromRGB(177, 16, 16)
+Button_4.TextSize = 20.000
+
+Text_3.Name = "Text"
+Text_3.Parent = Main
+Text_3.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Text_3.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Text_3.Position = UDim2.new(0.312714756, 0, 0.476772606, 0)
+Text_3.Size = UDim2.new(0, 146, 0, 50)
+Text_3.Font = Enum.Font.Cartoon
+Text_3.Text = "Anti Jump Delay"
+Text_3.TextColor3 = Color3.fromRGB(15, 199, 255)
+Text_3.TextSize = 15.000
+Text_3.TextXAlignment = Enum.TextXAlignment.Left
+
+Text_4.Name = "Text"
+Text_4.Parent = Main
+Text_4.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Text_4.BorderColor3 = Color3.fromRGB(30, 30, 30)
+Text_4.Position = UDim2.new(0.312714756, 0, 0.599022031, 0)
+Text_4.Size = UDim2.new(0, 146, 0, 50)
+Text_4.Font = Enum.Font.Cartoon
+Text_4.Text = "FPS Unlocker"
+Text_4.TextColor3 = Color3.fromRGB(15, 199, 255)
+Text_4.TextSize = 20.000
+Text_4.TextXAlignment = Enum.TextXAlignment.Left
+
+-- Scripts:
+
+local function IEWT_fake_script() -- PlayerName.LocalScript 
+	local script = Instance.new('LocalScript', PlayerName)
+
+	local player = game.Players.LocalPlayer
+	
+	if player then
+		script.Parent.Text = "" ..player.Name.. ""
+	end
+end
+coroutine.wrap(IEWT_fake_script)()
+local function LCYZSIJ_fake_script() -- Speed.LocalScript 
+	local script = Instance.new('LocalScript', Speed)
+
+	
+	script.Parent.MouseButton1Down:connect(function()
+	
+			script.Parent.BackgroundColor3 = Color3.fromRGB(15, 199, 255)
+		
+	end)
+	
+	script.Parent.MouseButton1Down:connect(function()
+		local Player = game:GetService'Players'.LocalPlayer;
+		local UIS = game:GetService'UserInputService';
+		UIS.InputBegan:connect(function(UserInput)
+			if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Q then
+				_G.Running = true
+				while wait(0.1) and _G.Running == true do
+	
+					game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * (value)
+				end
+			end
+		end)
+		UIS.InputEnded:connect(function(UserInput)
+			if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Q then
+				_G.Running = false
+			end
+		end)
+	end)
+	
+end
+coroutine.wrap(LCYZSIJ_fake_script)()
+local function EHDJB_fake_script() -- Button.LocalScript 
+	local script = Instance.new('LocalScript', Button)
+
+	
+	script.Parent.MouseButton1Down:connect(function()
+	
+			script.Parent.BackgroundColor3 = Color3.fromRGB(15, 199, 255)
+		
+	end)
+	
+	script.Parent.MouseButton1Down:connect(function()
+		local Player = game:GetService'Players'.LocalPlayer;
+		local UIS = game:GetService'UserInputService';
+	
+		_G.JumpHeight = 50;
+	
+		function Action(Object, Function) if Object ~= nil then Function(Object); end end
+	
+		UIS.InputBegan:connect(function(UserInput)
+			if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
+				Action(Player.Character.Humanoid, function(self)
+					if self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall then
+						Action(self.Parent.HumanoidRootPart, function(self)
+							self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
+						end)
+					end
+				end)
+			end
+		end)
+	
+	end)
+end
+coroutine.wrap(EHDJB_fake_script)()
+local function ECCBBEY_fake_script() -- Button_2.LocalScript 
+	local script = Instance.new('LocalScript', Button_2)
+
+	
+	script.Parent.MouseButton1Down:connect(function()
+	
+			script.Parent.BackgroundColor3 = Color3.fromRGB(15, 199, 255)
+		
+	end)
+	script.Parent.MouseButton1Down:connect(function()
+		setfpscap(1000)
+		end)
+end
+coroutine.wrap(ECCBBEY_fake_script)()
+local function DRFTIWF_fake_script() -- Button_3.LocalScript 
+	local script = Instance.new('LocalScript', Button_3)
+
+	
+	script.Parent.MouseButton1Down:connect(function()
+	
+			script.Parent.BackgroundColor3 = Color3.fromRGB(15, 199, 255)
+		
+	end)
+	
+	script.Parent.MouseButton1Down:connect(function()
+		Humanoid = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+		--Humanoid:ChangeState("Jumping")
+		local uis = game:GetService("UserInputService")
+		local rus = game:GetService("RunService")
+		local cd = false
+		local held = false
+	
+		uis.InputBegan:Connect(function(k)
+			if k.KeyCode == Enum.KeyCode.Space then
+				held = true
+			end
+		end)
+		end)
+end
+coroutine.wrap(DRFTIWF_fake_script)()
+local function RZTG_fake_script() -- Button_4.LocalScript 
+	local script = Instance.new('LocalScript', Button_4)
+
+	script.Parent.MouseButton1Down:connect(function()
+		game:GetService("CoreGui"):WaitForChild("ScreenGui"):Destroy()
+	
+	end)
+end
+coroutine.wrap(RZTG_fake_script)()
